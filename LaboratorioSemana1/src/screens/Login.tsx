@@ -11,7 +11,7 @@ export default function Login ({navigation} : any) {
     const [password, setPassword] = useState("");
     
     const handleLogin = () => {
-      navigation.navigate('HomeScreen')
+      navigation.navigate('HomeScreen', {email})
     }
 
     //asignacion de nuevo valor a variable
