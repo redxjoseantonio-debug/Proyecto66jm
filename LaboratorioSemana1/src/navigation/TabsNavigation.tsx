@@ -18,7 +18,7 @@ const Tab = createBottomTabNavigator<TabsParamList>();
 //3. utilizar el navegador por tabs
 export default function TabsNavigation(){
     return(
-        <Tab.Navigator>
+        <Tab.Navigator initialRouteName="HomeTab">
             <Tab.Screen name="ProfileScreen" component={Profile} options={{ tabBarIcon: () => (<Image source={require('../../assets/User.png')} style={{ width: 36, height: 36 }} />)}} />
             <Tab.Screen name="SettingsScreen" component={Settings} options={{ tabBarIcon: () => (<Image source={require('../../assets/settings.png')} style={{ width: 36, height: 36 }} />)}}/>
             <Tab.Screen name="HomeTab" component={Home} initialParams={{email:"Usuario"}} options={{ tabBarIcon: () => (<Image source={require('../../assets/Home.png')} style={{ width: 36, height: 36 }} />)}}/>
