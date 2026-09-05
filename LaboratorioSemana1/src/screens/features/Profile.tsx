@@ -5,6 +5,7 @@ import App from "../../../App";
 
 
 export default function Profile(){
+    
     return(
         <View>
             <CustomButton title="Cerrar Sesion" onPress={()=>{}}/>
